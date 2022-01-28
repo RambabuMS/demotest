@@ -12,7 +12,7 @@ export default function App() {
         "https://i.pinimg.com/564x/33/ef/93/33ef93bb6f3103cc335da102b333650f.jpg"
     },
     {
-      name: "Kohli",
+      name: "Virat Kohli",
       img:"https://newsin.co.in/wp-content/uploads/2020/11/Virat-kohli6.jpg"
     }
   ];
