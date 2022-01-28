@@ -1,0 +1,49 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color:lightgray;
+    color:black;
+}
+
+.bigbox{
+    padding: 2%;
+    margin: 1%;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.btn{
+    border: 3px solid lightgrey;
+    color:blue;
+    border-width: 3px;
+    margin: 0%;
+}
+
+.Space{
+    background-color: white;
+    padding: 20px;
+    margin: 1%;
+    border-radius: 4px;
+    align-items: center;
+   
+}
+ .btn:focus{
+      box-shadow:lightskyblue;
+    }
+    
+
+table,thead, tbody, tr, th, td{
+    border: 3px solid black;
+}
+button{
+margin: 1%;
+}
+.d-flex{
+    align-items: center;
+    justify-content: center
+}

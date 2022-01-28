@@ -1,0 +1,725 @@
+INTRODUCTION TO WEB
+
+What is web?
+
+   	web is a information system which has documents and webpages can be accessed by using url throutgh the internet..
+	Is an information system where documents and other web resources are identified by Uniform Resource Locators, which may be interlinked by hyperlinks, and are accessible over the Internet.
+
+what is internet?
+
+   The Internet is a vast network that connects computers all over the world. Through the Internet, people can share information and communicate from anywhere with an Internet connection.
+
+what is network?
+
+   What is called network?
+	A network consists of two or more computers that are linked in order to share resources (such as printers and CDs), exchange files, or allow electronic communications. ... Two very common types of networks include: Local Area Network (LAN) Wide Area Network (WAN)
+
+what is url?
+
+    A Uniform Resource Locator, colloquially termed a web address, is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it.
+
+what is web browser?
+
+    the software that is used for browsing and for displaying web pages which is available over the internet.
+
+what is web server?
+
+    the software that searches finds and provide documents to the browser as requested by them.
+
+How web works?
+
+   1) when we search any website in browser for the first time itgoes to the DNS SERVER where it can find the ip address of the website.
+
+   2) Along with that ip adress the browser sends an HTTP request to the server.
+
+   3) After the http request sent from the browser the TCP CONNECTION (three way handshake process) should be established before the data sharing.
+
+   4)once the TCP connection established the server sents the data to the client(browser).
+
+   5) the browser consist of  DOM PARSER and CSSOM PARSER which parses the data into the DOM TREE and CSSOM TREE.
+
+   6) Finally the data is displayed into the browser window.
+
+what is html parser?
+
+    html parser parses the html code (recieved form the server) into DOM tree.
+
+what is cssom parser?
+
+    cssom parser parses the css code(recieved from the server) into CSSOM tree 
+
+what is js engine?
+
+    it is an interpreter which executes the javascript code.
+
+what is internet ?
+
+    allows you to send and recieve data on web
+
+what is TCP/IP?
+
+    it is a protocol that defines how data should be transferred over the internet.
+
+what is DNS?
+
+    address book for website
+
+what is http?
+
+    it is a protocol that dedines a languages for client and server to each other.
+
+BROWSER WAR;
+
+    WWW was invented by tim berners lee in 1989
+
+    mosaic is the first web browser invneted by marc andressen in 1993
+
+    netscape is invented by jim clark in 1994
+
+    internet explorer is invented by micrsoft in 1995
+
+    chrome is invented by google in 2008
+
+    javascript is invented by brenden eich in 1995
+
+    initially js is called as mocha,live wire,livescript and then finally js.
+
+    ECMA - european computer manufacturing association which is globally accepted standard.
+
+what is DOM TREE?
+
+    DOM tree is a platform which allows programs to access and update the html elements
+
+what is CSSOM TREE?
+
+    CSSOM TREE  is a platform which allows the program to access and update the css elements.
+
+what is IP ADDRESS?
+
+    unique address that identifies device over the internet
+
+whatis MAC address?
+
+    it is a unique physical address that is used to identify the physical device.
+
+what is PORT address?
+
+    it is a communication start and end point.it is like a technical gate where the communication happens. each port is assigned to specific process or service.
+
+how the server looks at the url?
+
+    url consist of http request protocol followed by domain name,port number,file path and then some keywords to identify or filter the contents.
+
+what is REQUEST AND RESPONSSE CYCLE?
+
+    communication between server and client is done by http request.
+
+HTTP REQUEST;
+
+    http requests defines the action to be performed for a given data.
+
+9 methods are
+
+GET -retieve the data 
+HEAD
+POST- for creating the data
+PUT- update the data 
+DELETE- used to delete the data
+CONNECT
+OPTIONS
+TRACE
+PATCH
+
+HTTP responses;
+
+http response code indicates the specific http request is successful or not
+
+100-199 = processing
+200-299 = success
+300-399 = redirecting to another page
+400-499 = client error
+500-599 = servor error.
+
+what is debugger in browser?
+
+    it is a develepor tool which is used to finding and fixing the errors within the script.
+
+what is inspect in browser?
+
+    it is a developer tool which is used to  view and edit the html and css code behind the web content.
+
+what is responsive view?
+
+    it is a developer tool which helps the developer to make responsive web design for different screen size devices.
+
+what is browser js?
+
+    it is a scripting programming language which is used to make web pages functional and dynamic.
+
+what is node js?
+
+    NODE JS  is a javascript runtime environment which runs on v8 engine and executes the js code without the help of the browser.
+
+what are the data types in js?
+
+ primitive data types.
+
+   number
+   string
+   boolean
+
+ non primitive data types
+
+  objects
+  array
+
+what is copy by value?
+
+     when you copy number or string like b=a both variables will point to the different address this behaviour is  called as copy by vlaue.
+
+what is copy by refernce?
+
+     when you copy array or objects like b=a both will point to the same address this behaviour is called as copy by reference.
+
+what is window object?
+
+     window object represents the browser window
+
+     all global variables,objects and functions are the member of the window object.
+
+what is document object?
+
+     document object represents the webpage
+
+     if you want to access any html elements in html page you always start with accessing the document object.
+
+what is an array ?
+
+     array is a special variable which can holds more than one value.
+
+what is object?
+
+     objects are variables too.it also contains many values like array but it is written as key value pairs seperated by colon.
+
+what is json?
+
+     json is a data exchange format which also written in key value pairs inside double quotes.
+
+
+what is loops?
+
+     loops is used to do repeated task based on a condition.loop will keep running until the condition gets false.
+
+FOR LOOP
+
+     working for arrays 
+
+     working for accessing array of objects
+
+FOR IN LOOP- can be used for 
+
+     arrays 
+     to access object key and value seperately
+     to also acess both key and values seperately in objects of arrays
+
+FOR OF LOOP
+
+     TO access arrays 
+     to acess only whole objects in objects
+     works for array of object
+
+let arr = ["1",'2']
+
+for(var i of arr) {
+    console.log(i)
+}
+
+FOR EACH LOOP
+works for array
+works for array of objects
+works for accessing whole objects
+always undefined at last 
+
+let arr = ["1",'2']
+
+console.log(arr.forEach(ele=>console.log(ele)))
+
+XMLHttp request 
+
+this request is used to request data from server.
+
+what is hoisting?
+
+Hosting is the behaviour of moving all the declarations to the top of the scope before execution.
+
+what is scoping?
+
+Scope determines the accessibility of variables
+    Block scope - can acess within the flower braces
+    Function scope - can access only within the function
+    Global scope - can use globally anywhere
+
+what is a function?
+
+Function - function is a block of code designed to perform specific task.
+
+Is executed when something calls it
+
+Reusability of code
+
+what is return in function?
+
+return statement ends the execution of a function and returns the value of that calling function.
+
+TYPES OF FUNCTION:
+1 Normal function
+2 Anonymous function
+3 Arrow function
+4  Iife function.
+
+NORMAL FUNCTION
+
+SYNTAX
+
+function functionname(parameter1,parameter2){
+
+statements
+}
+
+while calling the function
+
+let variablename = functionname(parameter1,parameter2)
+
+EXAMPLE:
+
+function myfunc(a,b){
+    return a*b
+}
+
+let x=  myfunc(2,3)
+console.log(x)
+
+ANONYMOUS FUNCTION:
+
+SYNTAX:
+
+var variablename = function(parameter1,parameter2) {
+statements
+}
+
+while calling the function
+
+variablename(parameter1,parameter2)
+
+EXAMPLE:
+
+var myfunc = function(a,b){
+    return a*b
+}
+
+let x = myfunc(2,4)
+console.log(x)
+
+ARROW FUNCTION:
+
+SYNTAX:
+
+Let variablename=(parameter1,parameter2)=>statement
+
+while calling the function 
+variablename(parameter1,parameter2)
+
+EXAMPLE:
+
+let arrow = (a,b)=>a+b+100
+console.log(arrow(5,10))
+
+IIFE FUNCTION:
+
+SYNTAX:
+
+(function myfunction(parameter1,parameter2) {
+ console.log(parameter1*parameter2)
+})(parameter1,parameter2)
+
+no return 
+calling the function at the end of statement of function
+
+what is map function?
+
+Map function calls a function on every element in array and returns the values in new arrray without affecting the original array.
+
+EXAMPLE;
+let array = [2,3,4,5]
+
+let result = array.map(ele=>ele*10)
+console.log(result)
+
+Output:
+[ 20, 30, 40, 50 ]
+
+
+FILTER FUNCTION;
+
+the filter methods calls a function test case on each element on array and returns the values in new array without affecting the original array.
+
+EXAMPLE;
+
+let array = [20,30,4,5]
+let result = array.filter(ele=>ele>10)
+console.log(result)
+
+Output:
+[ 20, 30 ]
+
+
+REDUCE FUNCTION;
+the reducer function executes a reducer function for every array elements amd returns the single value.it does not affects the original array.
+
+EXAMPLE;
+
+let array = [2,3,4,5]
+let reducer =(a,b)=>a*b
+console.log(array.reduce(reducer)
+
+Output:
+120
+
+
+ERROR HANDLING
+
+JS error handling system is used to catch runtime errors usig try catch 
+
+
+
+try {
+    let name = guvi
+    console.log(name)
+}
+
+catch(ex)
+{
+      let bro = 'aravind'
+    console.log(bro)
+}
+finally {
+    let nick = "pugalenthi"
+    console.log(nick)
+}
+
+{
+throw "error"
+}
+
+REST AND SPREAD PARAMETER(ES6)
+
+SPREAD operator (...)
+
+spread operator expands the array elements
+
+syntax for rest parameter and spread operator are same.
+
+let arr = ["aravind","pugal"]
+console.log(...arr)
+
+aravind pugal
+
+to expand the string into character array
+let str = "hello"
+let char  =[...str]
+console.log(char)
+
+[ 'h', 'e', 'l', 'l', 'o' ]
+
+
+//combines two array into single array using spread operator
+let arr1 = [1,2,3,4]
+let arr2 = [5,6,7,8]
+
+let arr3 = [...arr1,...arr2]
+console.log(arr3)
+
+[ 1, 2, 3, 4, 5, 6, 7, 8 ]
+
+
+to push one array into another array 
+let arr1 = [1,2,3,4]
+ let arr2 = [5,6,7,8]
+  arr1.push(...arr2)
+ console.log(arr1)
+ 
+ [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+
+REST PARAMETER:
+
+function compute(a,b,C){
+    console.log(a+b)
+}
+
+compute(11,12,13)
+
+OUTPUT :
+
+23
+
+
+function compute(a,b,C){
+    console.log(a+b)
+}
+
+compute(11,12,13)
+
+OUTPUT :
+
+23
+
+if the function has a remaining parameters that parameters is called as rest parameters.
+
+//rest parameter also compute the rest parameters 
+
+function compute(...item) {
+    console.log(item)
+    let sum =0 
+    for (var i=0;i<item.length;i++){
+        sum += item[i]
+    }
+    return sum
+}
+
+console.log(compute(1,2,3,4,5,6,7,8,9))
+
+
+// can skip first  elements in array
+
+function compute(a,b,...item) {
+    console.log(item)
+    let sum =0 
+    for (var i=0;i<item.length;i++){
+        sum += item[i]
+    }
+    return sum
+}
+
+console.log(compute(1,2,3,4,5,6,7,8,9))
+
+[ 3, 4, 5, 6, 7, 8, 9 ]
+42
+
+
+
+
+what is array destructuring?
+
+destrucutrig means unpacking
+
+unpacking array elements into bunch of variables
+
+//array destructres and stores  the given array elements into seperate variables.
+
+let arr = ["pugal","aravind"]
+
+let[myname,broname]= arr
+
+console.log(myname)
+console.log(broname)
+
+
+//if you want to ignore elements using comma 
+put number of commas in between number of elements to skip
+
+let arr = ["pugal","aravind","john","jaya","amma"]
+
+let[myname,,,,chandra]= arr
+
+console.log(myname)
+
+console.log(chandra)
+
+
+what is template literals
+
+template literals are used to insert variable in string
+
+use of back-ticks(``) instead of quotes
+
+
+let a = 5
+let b = 10
+
+console.log(`fifteen is ${a+b}`)
+
+
+EXCEPTION HANDLING;(IN 
+
+un-expected situation
+
+exception handling statements;
+
+try{
+testing codes
+}
+
+catch(Error){
+     console.log(Error)
+}
+throw
+
+
+ES5 vs E56?
+
+ES5 means ecmascript5
+
+ES6 means ecmascript6
+
+ES6 reduces the code length.so only we are studying es6.
+
+const code length reduced in es6
+
+let and const block scope variable are introduced in es6.
+
+length of arrow functions are reduced 
+
+more effective,more remembering,better program running and concise.
+
+representation is easy.
+
+
+
+why javascript name?
+
+ why is livescript changed to js
+
+java is trend on that time
+
+javascript have object oriented feautres(OOPS)
+
+js adapt oops.
+
+FOUR PILLARS OF JAVASCRIPT
+
+Abstraction -hiding (ABSTRACT CLASS)
+
+ the process of implementation will be hidden for user 
+
+encapsulation - protection
+
+its like a protection also like a locking.
+
+inheritance- (Reusability)
+
+the child inherits the parents class
+
+polymorphism
+
+one person can act as a many roles called polymorphism.
+
+one face many features.
+
+
+What is class and objects in oops?
+
+CLASS -collections of objects,methods and properties.
+
+here function is called as a method
+
+object - real time entity (physical entities which can be felt)
+
+
+EXAMPLE;
+
+ class classname{
+    
+}
+
+//usual notation starts classname with capital letter
+
+// key value pairs is generic in normal  object 
+
+// but in class everything is specific to class.
+
+// every object has a  referece variable in class(s1)
+// reference is  a variable used to access the values in the class (like arrayname for array)
+
+// new : its oop feautre that will create a new fresh object.
+
+// this ; this is a temporaray reference (tr) variable is pointing to a freshly created object
+
+// kev : value pairs here called as a field: value
+
+// Constructor ; a special way of assigning values to the objects.
+
+// values should be dynamic in object instead of static
+
+
+
+class Car{
+
+    Constructor(brand,color){
+       this.brand = brand;
+       this.color= color;
+        
+    }
+}
+
+
+// this is called Constructor call
+
+let s1 = new Car("audi","brown")
+
+// to access object in the class should use reference variable s1.
+
+console.log(s1.brand)
+
+react has two class components they are
+
+class components 
+
+functional components
+
+ADDITIONAL FEAUTRES;
+
+class Car{
+    Constructor(brand,color){
+       this.brand = brand;
+       this.color= color;
+        
+    }
+}
+let s1 = new Car("audi","brown")
+let s2 = s1
+console.log(s2.brand)
+
+an single object can have any number of references 
+
+the functions that we used inside the class called methods
+
+class Car{
+    Constructor(brand,color){
+       this.brand = brand;
+       this.color= color;
+        
+    }
+ getbrand(){
+return this.brand
+}
+}
+let s1 = new Car("audi","brown")
+
+console.log(s1.getbrand())
+
+
+EXAMPLE;
+
+class rectangle{
+  constructor(length,breadth){
+    this.length= length;
+    this.breadth = breadth;
+  }
+  getarea(){
+    return this.length*this.breadth
+   
+}
+
+}
+let s1 = new rectangle("10","20")
+ console.log(s1.getarea());

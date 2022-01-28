@@ -1,0 +1,222 @@
+DAY-7;
+
+LIVE DOM VIEWER TOOL;
+
+This tool is used to explain how dom structure looks like.
+
+Shift+1+enter =template code
+
+STATIC ELEMENT;
+
+the elements which is created by html manually is called static elements.
+
+DYNAMIC ELEMENT;
+
+The elements which is created by using js dynamically called dynamic elements.
+
+DOM METHODS TO CREATE ELEMENTS;
+METHOD;1
+
+DOCUMENT.CREATEELEMENT;
+
+It creates an element in the document body.
+
+SYNTAX;
+
+let variablename = document.createElement("tagname')
+
+EXAMPLE;
+
+let division = document.createElement("div")
+
+METHOD;2
+INNERHTML;
+
+It is used to add content to the tag.
+
+SYNTAX;
+
+varname.innerHtml ="content"
+
+EXAMPLE;
+
+division.innerHtml ="this is content"
+
+METHOD;3 
+APPEND;
+
+It is used to append the element to the body.
+
+SYNTAX;
+
+document.body.append(variablename)
+
+EXAMPLE;
+
+document.body.append(division)
+
+TO APPEND TWO ELEMENTS AT SAME TIME;
+
+document.body.append(division1, division 2);
+
+NESTED TAG USING INNERHTML;
+
+div.innerHtml ="<div>content</div>"
+
+METHOD;4
+INNERTEXT;
+
+It appends  also tag as a content.
+
+division.innerText ="<div>content</div>"
+
+METHOD:5
+STYLING(INLINE CSS);
+
+It is used to style the element
+
+SYNTAX ;
+
+varname.style.property ="value"
+
+EXAMPLE;
+
+division.style.background-color="blue"
+
+METHOD;6 ATTRIBUTES;
+
+It is used to add class attribute,id attribute and other attributes to html element.
+
+SYNTAX;
+
+varname.setAttribute("attribute name","value")
+
+EXAMPLE;
+
+division.setAttribute("class","main")
+
+METHOD;7
+CLASS NAME;
+
+It is used to add only class to html element.
+
+SYNTAX;
+
+Varname.ClassName= "value"
+
+EXAMPLE;
+
+division.className="main"
+
+METHOD;8
+
+parent.append(child)
+
+MANIPULATION METHODS;
+It is used to get already available html elements in document.
+
+METHOD;1
+DOCUMENT.GETELEMENTBYID("VALUE")
+
+It is used to get element with id 
+Id should be unique
+Output will be html element
+If two elements with same id the first element will return
+
+EXAMPLE;
+
+let res = document.getElementById("main)
+Console.log(res)
+
+HOW TO GET INPUT FROM  USER;
+
+Write a function to get element by id of input.
+
+EXAMPLE;
+
+function foo(){
+Let res = document.getElememtById("main).value
+
+Console.log(res)
+}
+
+NOTE; (.value) is used to print value  instead of tag.
+Script tag should be below the elements.
+
+METHOD;2
+
+DOCUMENT.GET ELEMENT BYCLASSNAME;
+
+It is used to get elements by classname.
+It returns multiple class values incasse if have.
+It returns output in array 
+
+EXAMPLE;
+
+Let res=document.getElementByClassName("main")
+Console.log(res)
+
+DAY-8;
+
+METHOD;3
+
+DOCUMENT.GETELEMENTBYTAGNAME();
+
+It is used to get elements by tagname.
+It returns output in array.
+
+EXAMPLE;
+
+let res =document.getElementByTagName("div")
+Console.log(res)
+
+
+METHOD;4;
+
+QUERY SELECTOR;
+
+It get element based on the selectors(id,class,div)
+Only returns first occurence element.
+
+NOTE ; should use (. and #) before class and id
+
+EXAMPLE;
+
+let res = document.queryselector(".main")
+Console.log(res)
+
+QUERY SELECTOR ALL;
+
+query selector all will return all the element with the same selector.
+Otuptu will be array.
+EXAMPLE;
+
+let res = document.queryselectorAll(".main")
+Console.log("a)
+
+
+APPEND VS APPEND CHILD;
+
+append is used to add one or more element to the document.
+The return type will be always undefined.
+
+Parent.append(child1,child2)
+
+
+Append child is used to append only one element to the document.
+The return type will be the last added element.
+
+Parent.append(child1)
+
+
+ADDEVENT LISTENER;
+
+To add an event to the button ,can use addEventListener
+
+SYNTAX;
+
+element.addEventListener(type,eventListener)
+
+EXAMPLE;
+
+division.addEvenrListener(click,foo())

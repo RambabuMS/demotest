@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #2f3d46;
+    border: 1px solid;
+}
+body{
+    background-color: #cad2c5;
+}
+.main {
+    display: flex;
+    height: 700px;
+    padding: 20px;
+}
+.left {
+    width: 25%;
+    background-color: #353535;
+}
+.right {
+    width: 75%;
+}
+.box1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+
+}
+.box1 input {
+    margin: 10px;
+    width: 300px;
+    padding: 5px;
+}
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.one, .two, .three {
+    width: 30%;
+    height: 300px;
+    background-color: #353535;
+    margin: 10px;
+}
+@media screen and (max-width: 480px) {
+    .one,.two, .three {
+        width: 100%;
+    }
+}

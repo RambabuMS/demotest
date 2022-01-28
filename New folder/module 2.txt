@@ -1,0 +1,552 @@
+BOOTSTRAP 4.6;
+
+Bootstrap is used as a framework  for building responsiveness in devices.
+
+CAN BE ADDED INTO TWO WAYS;
+
+1)CDN-Content delivery network.
+
+2)Installing through file.
+
+FRAMEWORK ; additional style is called framework.
+
+LAYOUT;
+
+layout is used to make design easy by classifying the portions of document.
+
+CONTAINERS;
+
+containers are used to store the elements and center the contents within them.
+
+You can use multiple container in document.
+
+GRID;
+
+Combination of row and column are called as grid.
+
+BOOTSTRAP HAS 3 CONTAINERS;
+
+1) CONTAINER - max -width at each responsive break point.
+
+2)CONTAINER-FLUID- 100% at all breakpoints.
+
+3)CONTAINER-BREAKPOINT(sm,md,lg,xl) - 100% until breakpoint.
+
+a)container-sm
+b) container-md
+c) container-lg
+d) container-xl
+
+DEVICES CATEGORIES;
+
+1)XS-extrasmall
+2)SM-small
+3)MD-medium
+4)LG-large
+5)XL-extra large
+
+GRID SYSTEM;
+
+twelve column system.
+
+WHY?
+
+12 can be easily divided into portions(4:4:4,6:6,3:3:3:3,2:2:2:2:2:2)
+
+One percent = (1/12)*100 =8.33%
+
+BOOTSTRAP FLOW OF ELEMENTS;
+
+Container =>Row=>column
+
+CONTAINER CAN HAVE MANY ROWS.
+
+BUT ONE ROW ALSO CAN HAVE MORE THAN 12 (0R) LESS THAN 12 COLUMN (BUT MOST PREFERRABLE COLUMN IS LESS THAN 12 IN ONE ROW).
+
+SYNTAX;
+
+shortcut to create container row and column
+
+.container>.row>.column
+
+
+DAY-6;
+
+BLOG TASK
+=======================================================================================================================================
+DAY -3;
+
+CSS - CASCADING STYLE SHEETS
+
+TYPES OF CSS;
+
+1)Inline
+2)Internal
+3)External
+
+INLINE CSS;
+
+Inline css should be used inside the body.
+
+The style which uses inside  element tag are called inline css.
+
+  Property : value
+  Bg-colour : green
+
+INTERNAL CSS;
+
+used to style on same document
+Internal css should be used inside head tag 
+
+SELECTORS; 
+ used to style certain group of elements
+
+TYPES OF SELECTORS;
+
+class
+Id 
+Tag
+
+CLASS SELECTOR;
+
+Class selector can be applicable to more than one element.
+
+SYNTAX; 
+.Classname {
+
+}
+
+Background colour can be defined by color code.
+
+RGB; 
+
+RGB are called high wavelength colours
+(0-255,0-255,0-255)
+You can go for online colour pickers.
+
+CAN WE USE TWO CLASS ON SINGLE ELEMENT;
+
+Recent class in style will override the existing class of element.
+
+Recent class styles will be rendered.
+
+ID SELECTORS;
+
+Id should use for only one element
+Id should be unique.
+
+SYNTAX;
+
+#Idname{
+
+}
+
+PRIORITY WISE ;
+
+inline>id>class>tag
+
+EXTERNAL CSS;
+
+If styles are written in external css file and then linked by using link tag are called external css.
+
+Link tag should be inside head tag.
+
+Link tag is called self closing tag.
+
+LINK ATTRIBUTES;
+
+REL ; relationship
+
+HREF; Document path
+
+BOX MODEL ; 
+
+It is like wrapped around every Html element.
+
+BOX MODEL CONSIST OF ;
+
+1) Margin
+2) Border
+3) padding
+4) content
+
+MARGIN ;
+
+It is an imaginary space around the border of the element.
+
+FLOW OF VALUE;
+
+	Top,Right,Bottom,left.
+
+	Values are given in terms of pixels
+	MARGIN :2PX
+ 	Applies to four side of element
+
+	MARGIN ; 2PX 3PX;
+	2px is for top and bottok and 3px is for right and left 
+	If you want to set margin of p tag to zero then should not use shorthand property bcoz it will not work,at that time you can go for margin-top,margin-bottom.
+
+BORDER ;
+
+It is a visible line.
+Has no default property values.
+
+3 IMPORTANT PROPERTIES;
+
+1)Width
+2) colour
+3) style
+
+Border ; 1px solid green;
+
+PADDING ;
+space around the content.
+
+We can use shorthand property.
+
+Padding ; 1px 2px 3px 4px;
+
+DAY -4
+
+POSITION PROPERTIES;
+
+The position property specifies the type of positioning used for an element.
+
+TYPES OF POSITION PROPERTIES;
+
+1) Static
+2) Relative
+3) absolute
+4) fixed
+5) sticky.
+
+STATIC;
+
+All html element are static by default.
+
+Static property is not affected by top,right,bottom and left.
+
+RELATIVE;
+
+Affected by top, right,bottom and left.
+A space is created for them in the document.
+Taking position with respect to other element.
+It will affect the document flow.
+
+ABSOLUTE;
+
+Affected by top,rigth,bottom and left.
+It will affect document flow.
+No space is created.
+It will be positioned  with respect to the first positioned element.
+
+TWO-CASES;
+
+CASE-1;
+
+Where absolute used with relative
+
+Parent - relative
+Child-absolute
+
+Here the position of child is respect to parent because parent is the nearest element.
+
+CASE;2
+
+If it is used alone it takes position with respect to body.
+
+FIXED ;
+
+If you allot one specific location top,right,bottom or left.
+
+It will affected by scrolling.
+
+It is affected by top,right,left,bottom.
+
+STICKY;
+
+They will affect by scrolling to certain limit after that it will stick on to it.
+
+IMPORTANT keyword;
+
+PRIORITY;
+
+! important>inline>id>class>tag
+
+If important is mentioned in class or id or inline no matter what others is it will override all other css.
+
+No need to use important in inline css bcoz it have already high priority.
+
+If you use two important the recent one will be rendered.
+
+GRADIENTS;
+
+Transition from one colour to another colour is called gradients.
+
+TYPES;
+
+1)linear -gradient.
+2) circular-gradient.
+
+To use gradients use background-image property.
+
+For linear Default flow of gradient is top to bottom.(red,green).
+
+To change bottom to top is (to top,red ,green)
+
+To change  to right is (to right,red ,green)
+
+To change to left is (to left,red ,green)
+
+(180 deg,red,yellow) = top to bottom.
+(0 deg,red,yellow) = bottom to top.
+(90deg,red,yellow) = left to right.
+(-90,red,yellow) = right to left.
+
+Circular gradients/radial gradient;
+
+Default shape is ellipse for radial gradient.
+
+To change ellipse to circle use circle keyword
+(Circle,red,green,yellow).
+
+OVERFLOW;
+
+Overflow used to control the element.
+Default value is visible.
+
+THRRE MAIN PROPERTIES;
+
+1) Visible
+2) Hidden
+3) Scroll
+
+Visible - this value also shows the overflowing content.
+
+Hidden - this value doee not show the overflowing content.
+
+Scroll - automatically scroll bar will be added.
+
+DAY-5
+
+RWD -Responsive web design
+
+Media queries - main objective of media queries is to create responsive web design according to the device.
+
+SYNTAX;
+
+@media screen and (max-width : 500px){
+div{
+ bg-color :"red";
+}
+}
+
+Media queries should be inserted in head tag below the title tag.
+
+==========================================================================================================================================================
+
+Installing bracket pair colorizer
+Html css support
+Html snippets
+Vs code icons
+
+Shift+1+Enter = Template code (or)Boiler plate.
+
+Html 5have many features and Template code is short when comparing to Html4.
+
+
+  
+      <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                  <title>HTML 5 Boilerplate</title>
+                      <link rel="stylesheet" href="style.css">
+                        </head>
+                          <body>
+                          	<script src="index.js"></script>
+                          	  </body>
+                          	  </html>
+
+<!DOCTYPE html> = it conveys that document is Html5
+
+<html lang="en"> = it conveys that document has written in english language.
+
+<head> = Head tag contains meta information and  contains only document information.
+
+Meta tag = conveys the page information.
+
+Body tag = contains all the contents
+
+Html tags = have opening and closing tag
+
+Some tag doesn't have closing tag they are called self closing tags.
+
+Title tag = conveyss the document title that can be  see in the tab.
+
+UTF -8 = Universally Text Format -8 which is accepted globally.
+
+TERMINOLOGIES IN HTML;
+
+Element - combiantion of tag and content called element.
+
+p tag = paragraph tag that has margin top and bottom 16px default.
+
+Heading tags (h1-h6);
+
+H1 - large heading
+H6 - small heading
+
+It is default bold.
+
+A tag = to create redirection using hyperlink.
+
+Attributes = provides additional information about tag.
+
+Attributes for a tag; 
+
+1) Href = is the redirection link
+2) Traget  = used to open link in new tab.
+
+OFFICIAL DOCS FOR HTML ;
+
+HTML MDN
+
+TABLE;
+
+Table - table tag
+Thead - head tag
+Tbody - body tag
+Tr - row tag
+Th - head tag
+Td - data tag
+
+For creating a border in table we use internal css.
+Internal css should be insert between head tag and below of title tag and should be used between style tag.
+
+Internal css used for particular document inside head.
+
+Tag selector - used to select particular element, division,section for styling using css.
+
+For bordering the table = use border prpperty in css by defining thick visible line. 1px solid red colour.
+
+Shorthand propety = short hand property lets you to add the values to same element simultaneously.
+
+Border- collapse - this css property is used to remove the gap between the borders.
+
+Format Document =>Html language features.
+
+TWO CELL IN ONE HEADING ; It can be achieved by using colspan property.
+
+Colspan - folding two cells in one heading 
+
+Colspan can be used to both headings and data
+
+NETLIFY DEPLOYMENT;
+
+Using Netlify you can host your website cost of free.
+
+DAY-2;
+
+DIV;
+
+Div is already in html4.
+It is a block level element
+Div can be used to style from small to large elements.
+
+SECTION;
+
+Introduced in html5.
+Section is similar to div.
+Section is also block level element.
+The important difference between div and section is section can be used for only style group of elements.
+
+It is called generic tag.
+Section tag is used to group similar category group of elements.
+Section can be used anywhere it has no restrictions.
+
+DIV HAS MORE PREFERENCE BCOZ IT CAN BE USED FOR EVEN SMALL ELEMENTS
+
+ARTICLE;
+
+Collection of information about one particular event called articles.
+
+Introduced in html5 along with section.
+
+No restrictions to use.
+
+It is mostly used in newspapers article.
+
+INLINE VS BLOCK LEVEL ELEMENTS;
+
+BLOCK-LEVEL ELEMENTS;
+
+always starts in new line.
+ex; p tag,h tags,div, section...
+The display property of block level elements is block.
+
+INLINE-ELEMENTS;
+
+Always starts in same line.
+Ex: span
+
+The display property is always in-line.
+
+HTML FORMS;
+
+Html forms is used to collect some form of information from user.
+
+There ere more type of input-formats, some of them are ;
+
+Url
+Email
+Password
+File
+Radio
+Checkbox
+
+TAGS USED IN FORMS;
+
+INPUT; It is a field where users can write thier information.
+
+LABEL; It is used to instruct the user to enter the particular detail in input.
+
+IMPORTANT ATTRIBUTES IN FORMS;
+
+FOR ATTRIBUTE;
+
+For attribute in label is used to join the label with the respective input field by mentioning the same value in the id of the respective input.
+
+To hold input and label tightly.
+
+
+PLACEHOLDER;
+
+It is a imaginary text that is placed inside the input box to guide the user to enter the correct information.
+
+NAME ATTRIBUTE;
+
+It is user-defined value that stores the user-input's information to send to the server.
+
+Submit pushes the data from user to server.
+
+FORM METHODS;
+
+GET - It is the forms default method so only the users information can seen in url after the form has been submitted.
+
+POST - It is the one of the form method which is used to hide the users information in the url for safety purpose.
+
+All browsers default http method  is GET.
+
+REQUIRED ATTRIBUTE;
+
+Required keyword can be used in input for the field which is mandatory to be filled.
+
+ONSUBMIT -ATTRIBUTE;
+
+<form onsubmit ="foo()">
+
+This onsubmit attribute is used to show user compulsary popup notification to be filled in input field.
+
+Validation popup before submit.
+
+==================================================xxxxx============================================================================

@@ -1,0 +1,260 @@
+var div1=document.createElement('div');     
+div1.setAttribute('class','head');
+div1.innerHTML='Ice & Fire API and Welcome to Mini Library';
+
+var cont=document.createElement('div');
+cont.setAttribute('class','container');
+
+var row1=document.createElement('div');
+row1.setAttribute('class','row');
+
+var col1=document.createElement('div');
+col1.setAttribute('class','col-md-6');
+
+var b1=document.createElement('div');
+b1.setAttribute('class','boxe');
+b1.setAttribute('id','boxy');
+
+var book1=document.createElement('div');
+book1.setAttribute('class','box1');
+book1.setAttribute('id','b1');
+
+var img1=document.createElement('img');
+img1.setAttribute('src','img/got.jpg');
+
+var bdiv=document.createElement('div');
+bdiv.setAttribute('class','fbox');
+bdiv.innerText=`
+                Name: ${data[0].name}
+                ISBN: ${data[0].isbn}
+                Number of Pages: ${data[0].numberOfPages}
+                Authors: ${data[0].authors}
+                Publisher: ${data[0].publisher}
+                Released date: ${data[0].released}`;
+ 
+var col2=document.createElement('div');
+col2.setAttribute('class','col-md-6');
+
+var b2=document.createElement('div');
+b2.setAttribute('class','boxe1');
+b2.setAttribute('id','boxy1');
+
+var book2=document.createElement('div');
+book2.setAttribute('class','box2');
+book2.setAttribute('id','b2');
+
+var img2=document.createElement('img');
+img2.setAttribute('src','img/cok.jpg');
+
+var bdiv1=document.createElement('div');
+bdiv1.setAttribute('class','fbox1');
+bdiv1.innerText=`
+                Name: ${data[1].name}
+                ISBN: ${data[1].isbn}
+                Number of Pages: ${data[1].numberOfPages}
+                Authors: ${data[1].authors}
+                Publisher: ${data[1].publisher}
+                Released date: ${data[1].released}`;
+
+var row2=document.createElement('div');
+row2.setAttribute('class','row');
+row2.setAttribute('id','r2');
+
+var col3=document.createElement('div');
+col1.setAttribute('class','col-md-6');
+
+var b3=document.createElement('div');
+b3.setAttribute('class','boxe2');
+b3.setAttribute('id','boxy2');
+
+var book3=document.createElement('div');
+book3.setAttribute('class','box3');
+book3.setAttribute('id','b3');
+
+var img3=document.createElement('img');
+img3.setAttribute('src','img/sos.jpg');
+
+var bdiv2=document.createElement('div');
+bdiv2.setAttribute('class','fbox2');
+bdiv2.innerText=`
+                Name: ${data[2].name}
+                ISBN: ${data[2].isbn}
+                Number of Pages: ${data[2].numberOfPages}
+                Authors: ${data[2].authors}
+                Publisher: ${data[2].publisher}
+                Released date: ${data[2].released}`;
+                 
+
+book1.appendChild(img1);
+b1.appendChild(book1);
+b1.appendChild(bdiv);
+col1.appendChild(b1);
+book2.appendChild(img2);
+b2.appendChild(book2);
+b2.appendChild(bdiv1);
+col2.appendChild(b2);
+row1.appendChild(col1);
+row1.appendChild(col2);
+cont.appendChild(row1);
+
+book3.appendChild(img3);
+b3.appendChild(book3);
+b3.appendChild(bdiv2);
+col3.appendChild(b3);
+row2.appendChild(col3);
+cont.appendChild(row2);
+
+document.body.append(div1,cont);
+
+
+
+
+
+body{
+    margin: 0px;
+    background-color: #e1dcc5;
+}
+.head{
+    background-color: black;
+    color: lightcyan;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+#box1{
+    background-color:powderblue;
+
+}
+.boxe{
+    display: flex;
+    background-color:powderblue;
+}
+.fbox{
+    padding:30px;
+   
+}
+.boxe1{
+    display: flex;
+    background-color:powderblue;
+}
+.fbox1{
+    padding:30px;
+   
+}
+.boxe2{
+    display: flex;
+    background-color:powderblue;
+}
+.fbox2{
+    padding:30px;
+   
+}
+#r2{
+    margin-top: 50px;
+}
+
+
+
+
+    <div class="box1">
+      <div><img src="img/got.jpg" class="img1"> </div>
+      <div class="fbox1"><strong>
+      Name: ${data[0].name}<br>
+      ISBN: ${data[0].isbn}<br>
+      Number of Pages: ${data[0].numberOfPages}<br>
+      Authors: ${data[0].authors}<br>
+      Publisher: ${data[0].publisher}<br>
+      Released date: ${data[0].released}</strong></div>       
+    </div>
+    <div class="box2">
+    <div><img src="img/cok.jpg" class="img2"> </div>
+    <div class="fbox2">
+    Name: ${data[1].name}<br>
+    ISBN: ${data[1].isbn}<br>
+    Number of Pages: ${data[1].numberOfPages}<br>
+    Authors: ${data[1].authors}<br>
+    Publisher: ${data[1].publisher}<br>
+    Released date: ${data[1].released}</div>       
+    </div>   
+    <div class="box3">
+    <div><img src="img/sos.jpg" class="img3"> </div>
+    <div class="fbox3">
+    Name: ${data[2].name}<br>
+    ISBN: ${data[2].isbn}<br>
+    Number of Pages: ${data[2].numberOfPages}<br>
+    Authors: ${data[2].authors}<br>
+    Publisher: ${data[2].publisher}<br>
+    Released date: ${data[2].released}</div>       
+    </div>
+    <div class="box4">
+    <div><img src="img/thk.jpg" class="img4"> </div>
+    <div class="fbox4">
+    Name: ${data[3].name}<br>
+    ISBN: ${data[3].isbn}<br>
+    Number of Pages: ${data[3].numberOfPages}<br>
+    Authors: ${data[3].authors}<br>
+    Publisher: ${data[3].publisher}<br>
+    Released date: ${data[3].released}</div>       
+    </div>  
+    <div class="box5">
+    <div><img src="img/foc.jpg" class="img5"> </div>
+    <div class="fbox5">
+    Name: ${data[4].name}<br>
+    ISBN: ${data[4].isbn}<br>
+    Number of Pages: ${data[4].numberOfPages}<br>
+    Authors: ${data[4].authors}<br>
+    Publisher: ${data[4].publisher}<br>
+    Released date: ${data[4].released}</div>       
+    </div> 
+    <div class="box6">
+    <div><img src="img/ss.jpg" class="img6"> </div>
+    <div class="fbox6">
+    Name: ${data[5].name}<br>
+    ISBN: ${data[5].isbn}<br>
+    Number of Pages: ${data[5].numberOfPages}<br>
+    Authors: ${data[5].authors}<br>
+    Publisher: ${data[5].publisher}<br>
+    Released date: ${data[5].released}</div>       
+    </div>
+    <div class="box7">
+    <div><img src="img/mk.jpg" class="img7"> </div>
+    <div class="fbox7">
+    Name: ${data[6].name}<br>
+    ISBN: ${data[6].isbn}<br>
+    Number of Pages: ${data[6].numberOfPages}<br>
+    Authors: ${data[6].authors}<br>
+    Publisher: ${data[6].publisher}<br>
+    Released date: ${data[6].released}</div>       
+    </div>
+    <div class="box8">
+    <div><img src="img/dd.jpg" class="img8"> </div>
+    <div class="fbox8">
+    Name: ${data[7].name}<br>
+    ISBN: ${data[7].isbn}<br>
+    Number of Pages: ${data[7].numberOfPages}<br>
+    Authors: ${data[7].authors}<br>
+    Publisher: ${data[7].publisher}<br>
+    Released date: ${data[7].released}</div>       
+    </div>
+    <div class="box9">
+    <div><img src="img/pq.jpg" class="img9"> </div>
+    <div class="fbox9">
+    Name: ${data[8].name}<br>
+    ISBN: ${data[8].isbn}<br>
+    Number of Pages: ${data[8].numberOfPages}<br>
+    Authors: ${data[8].authors}<br>
+    Publisher: ${data[8].publisher}<br>
+    Released date: ${data[8].released}</div>       
+    </div>
+    <div class="box10">
+    <div><img src="img/rp.jpg" class="img10"> </div>
+    <div class="fbox10">
+    Name: ${data[9].name}<br>
+    ISBN: ${data[9].isbn}<br>
+    Number of Pages: ${data[9].numberOfPages}<br>
+    Authors: ${data[9].authors}<br>
+    Publisher: ${data[9].publisher}<br>
+    Released date: ${data[9].released}</div>       
+    </div>
+
