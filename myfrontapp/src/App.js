@@ -7,7 +7,7 @@ export default function App() {
       img: "https://i.ytimg.com/vi/uOA25BRgSic/maxresdefault.jpg"
     },
     {
-      name: "MSD",
+      name: " Thala MSD",
       img:
         "https://i.pinimg.com/564x/33/ef/93/33ef93bb6f3103cc335da102b333650f.jpg"
     },
